@@ -13,8 +13,6 @@ require '../../ext/phpspreadsheet/vendor/autoload.php';
 
 use PhpOffice\PhpSpreadsheet\{Spreadsheet, IOFactory};
 
-
-
 class Exporta{
 	
 	private $facturas;
@@ -52,7 +50,7 @@ class Exporta{
 			$hoja->setCellValue('E1', 'Subtotal');
 			
 			$contadorFila = 2;
-			foreach($ventas as $r): 
+			foreach($ventas as $r):
 				
 				$hoja->setCellValue('A'.$contadorFila, $r['nroFactura']);
 				$hoja->setCellValue('B'.$contadorFila, $r['fechaVenta']);

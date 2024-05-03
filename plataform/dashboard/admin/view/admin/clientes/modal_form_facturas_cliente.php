@@ -31,6 +31,12 @@
                         </thead>
                     </table>
                 </div>
+                <form action="report/export_excel_ventas_cliente.php" method="post">
+                    <input type="hidden" id="cliente_actual" name="cliente"/>
+                    <button type="submit" name="btn_export_rep_ventas" class="btn btn-outline-success form-control">
+                      <i class="ri-file-excel-2-line"></i> Exportar informe
+                    </button>
+                </form>
             </div>
         </div>
     </div>

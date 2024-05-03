@@ -34,8 +34,9 @@
                           </thead>
                       </table>
                   </div>
-                  <form action="report/export_excel_ventas_cliente.php" method="post">
-                    <button type="submit" name="btn_export_rep_facturas" class="btn btn-outline-success form-control">
+                  <form action="report/export_excel_ventas.php" method="post">
+                    
+                    <button type="submit" name="btn_export_rep_ventas" class="btn btn-outline-success form-control">
                       <i class="ri-file-excel-2-line"></i> Exportar general
                     </button>
                   </form>

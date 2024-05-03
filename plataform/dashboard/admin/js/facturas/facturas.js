@@ -217,6 +217,7 @@ $(document).ready(function() {
                 $("#nombreCompleto_info").html(data.nombreCompleto);
                 $("#telefono_info").html(data.telefono);
                 $("#tipoIdentificacion_info").html(data.tipoIdentificacion);
+                $("#cliente_actual").val(data.id);
                 cargar_facturas_cliente(data.id);
             }
         });

@@ -26,8 +26,7 @@ class Exporta{
 	
 	public function Exportar_informe(){  
 		
-		
-		$ventas = $this->facturas->reporte_facturas_cliente();
+		$ventas = $this->facturas->reporte_facturas_cliente($_POST['cliente']);
 		
 		
     	$date_actual = date('Y-m-d h:i');
@@ -50,7 +49,7 @@ class Exporta{
 			$hoja->setCellValue('D1', 'Descripcion');
 			$hoja->getColumnDimension('E')->setWidth(15);
 			$hoja->setCellValue('E1', 'Subtotal');
-			
+
 			$contadorFila = 2;
 			foreach($ventas as $r): 
 				
@@ -79,7 +78,7 @@ class Exporta{
 	
 	
 }
-if(isset($_POST['btn_export_rep_facturas'])){
+if(isset($_POST['btn_export_rep_ventas'])){
 	
 	if (isset ($_SESSION['SESION']))
     {
